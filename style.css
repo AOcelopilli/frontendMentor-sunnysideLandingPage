@@ -368,7 +368,7 @@ section {
   padding: 1rem;
 }
 #footer li:hover a {
-  opacity: 0.7;
+  color: white;
 }
 
 #footer a {
@@ -428,9 +428,19 @@ section {
     cursor: pointer;
   }
 
-  .menu-desktop-links li:hover {
+  .menu-desktop-links li:last-child {
     background-color: white;
     color: black;
+    font-family: "Fraunces";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
+  .menu-desktop-links li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
   }
 
   #introduction {
@@ -457,7 +467,26 @@ section {
   .card-text {
     width: 50vw;
     text-align: left;
-    padding: 3rem;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card-text a::before {
+    display: none;
+    bottom: 0;
+  }
+
+  .card-text a:hover:before {
+    display: block;
+    bottom: -20%;
+  }
+
+  .card-text h2,
+  p {
+    width: 80%;
   }
 
   .card-1 {
