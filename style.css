@@ -261,6 +261,57 @@ section {
     background-image: url(images/mobile/image-photography.jpg);
     color: var(--main-blue);
   }
+
+  /* Testimonials */
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #testimonials h2 {
+    padding: 3rem 0;
+    text-transform: uppercase;
+    color: var(--main-blue-white);
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: center;
+    text-align: center;
+    color: var(--modal-blue-gray-100);
+    padding: 1rem;
+  }
+
+  .testimonial > * {
+    padding: 0.5rem;
+  }
+
+  .profile-img img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .testimonial p {
+    line-height: 1.5rem;
+  }
+
+  .client-info h3 {
+    color: var(--main-blue-dark);
+  }
+
+  .client-info span {
+    color: var(--main-blue-white);
+    display: block;
+    padding: 0.5rem;
+  }
 }
 
 /* Attribution */
