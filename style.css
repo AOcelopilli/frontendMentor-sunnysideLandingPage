@@ -312,6 +312,36 @@ section {
     display: block;
     padding: 0.5rem;
   }
+
+  /* Gallery */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img {
+    min-height: 30vh;
+    background: blue no-repeat center;
+    background-size: cover;
+    width: 50vw;
+  }
+
+  .gallery-img-1 {
+    background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+  }
+
+  .gallery-img-2 {
+    background-image: url(images/mobile/image-gallery-orange.jpg);
+  }
+
+  .gallery-img-3 {
+    background-image: url(images/mobile/image-gallery-cone.jpg);
+  }
+
+  .gallery-img-4 {
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+  }
 }
 
 /* Attribution */
