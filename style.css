@@ -240,7 +240,7 @@ section {
 }
 
 .card-bg-text {
-  background: url(images/mobile/image-graphic-design.jpg) no-repeat;
+  background: url(images/mobile/image-graphic-design.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
   min-height: 80vh;
@@ -396,4 +396,134 @@ section {
 
 /* Desktop version */
 @media (min-width: 500px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu-desktop {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+  }
+
+  .menu-desktop-logo {
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-desktop-links ul {
+    padding: 0 1rem;
+    list-style: none;
+    display: flex;
+    color: white;
+  }
+
+  .menu-desktop-links li {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .menu-desktop-links li:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #introduction {
+    background-image: url(images/desktop/image-header.jpg);
+  }
+
+  #introduction h1 {
+    transform: translateY(-100%);
+  }
+  #introduction .down-arrow {
+    transform: translateY(-30%);
+  }
+
+  .card {
+    display: flex;
+    min-height: 60vh;
+  }
+
+  .card-img {
+    width: 50vw;
+    height: auto;
+  }
+
+  .card-text {
+    width: 50vw;
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .card-1 {
+    flex-direction: row-reverse;
+  }
+
+  .card-1 .card-img {
+    background-image: url(images/desktop/image-transform.jpg);
+  }
+
+  .card-2 .card-img {
+    background-image: url(images/desktop/image-stand-out.jpg);
+  }
+
+  .card-bg-text {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
+
+  .card-bg-text:nth-child(2) {
+    background-image: url(images/desktop/image-photography.jpg);
+  }
+
+  .card-bg-text p {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.6rem;
+  }
+
+  .testimonials {
+    display: flex;
+  }
+
+  .testimonial {
+    width: 30vw;
+  }
+  .profile-img img {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .client-info {
+    margin-top: 3rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 25vw);
+  }
+
+  .gallery-img {
+    width: 25vw;
+    min-height: 50vh;
+  }
+
+  .gallery-img-1 {
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+  }
+
+  .gallery-img-2 {
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+  }
+
+  .gallery-img-3 {
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+  }
+
+  .gallery-img-4 {
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+  }
 }
