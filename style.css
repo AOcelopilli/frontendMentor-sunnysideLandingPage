@@ -1,7 +1,7 @@
 /* Barlow - 600 */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 /* Fraunces - 700, 900 */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@200;300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@200;300;600;700;900&display=swap");
 
 :root {
   /* 
@@ -45,7 +45,7 @@ h3 {
 }
 
 section {
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 #introduction {
@@ -133,6 +133,8 @@ section {
     padding: 1rem 2rem;
   }
 
+  /* Introduction */
+
   #introduction {
     background: url(images/mobile/image-header.jpg) no-repeat center;
     background-size: cover;
@@ -151,6 +153,113 @@ section {
     text-transform: uppercase;
     margin-bottom: 2rem;
     letter-spacing: 0.3rem;
+  }
+
+  /* cards */
+  .card {
+    min-height: 100vh;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 50vh;
+    background: rgba(255, 0, 0, 0.178) no-repeat center;
+    background-size: cover;
+  }
+
+  .card-text {
+    padding: 3rem 1rem;
+    background-color: #fffbf8;
+    color: var(--modal-blue-gray-70);
+    text-align: center;
+  }
+
+  .card-text h2 {
+    color: var(--main-blue-dark);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+  }
+
+  .card-text p {
+    line-height: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .card-text a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Fraunces";
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.25s ease-out;
+    color: var(--main-blue-dark);
+    z-index: 10;
+  }
+
+  .card-text a::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 12px;
+    background-color: var(--main-yellow);
+    opacity: 0.3;
+    filter: blur(1px);
+    border-radius: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20%;
+    transition: all 0.25s ease-out;
+    z-index: -1;
+  }
+
+  .card-text a:hover {
+    opacity: 0.75;
+  }
+
+  .card-text a:hover:before {
+    bottom: -50%;
+  }
+
+  .card-1 .card-img {
+    background-image: url(images/mobile/image-transform.jpg);
+  }
+
+  .card-2 .card-img {
+    background-image: url(images/mobile/image-stand-out.jpg);
+  }
+
+  .card-2 .card-text a::before {
+    background-color: var(--main-red);
+  }
+
+  .card-bg-text {
+    background: url(images/mobile/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: var(--main-cyan);
+    font-weight: bold;
+  }
+
+  .card-bg-text h2 {
+    padding: 1rem;
+  }
+
+  .card-bg-text p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+    line-height: 1.2rem;
+  }
+
+  .card-bg-text:nth-child(2) {
+    background-image: url(images/mobile/image-photography.jpg);
+    color: var(--main-blue);
   }
 }
 
