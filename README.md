@@ -25,14 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/SunnysideLandinPage.png)
-
-This is a preview of the proyect in a layout of 375px witdh.
+![Preview](images/SunnysideLandinPage.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link](https://your-solution-url.com)
+- Live Site URL: [Link](https://angelpineda-dev.github.io/frontendMentor-sunnysideLandingPage/)
 
 ## My process
 
@@ -47,7 +45,7 @@ This is a preview of the proyect in a layout of 375px witdh.
 
 ### What I learned
 
-I learned to develope a complate landing page, with importance on semantic HTML, pure CSS and a piece of JavaScript where was required.
+I learned to develope a complate landing page to fit each part in the place it should be.
 
 ### Continued development
 
@@ -55,6 +53,6 @@ For pages of this sizes or bigger, I think I'll need use tools like SASS or Boot
 
 ## Author
 
-+ Website - [www.angelpineda.com.mx](https://www.angelpineda.com.mx)
++ Website - [www.angelpineda.dev](https://angelpineda-dev.github.io/Home/)
 + Frontend Mentor - [@angelp495](https://www.frontendmentor.io/profile/angelp495)
-+ Twitter - [@AOcelopilli](https://twitter.com/AOcelopilli)
++ Twitter - [@angelpineda_dev](https://twitter.com/angelpineda_dev)
